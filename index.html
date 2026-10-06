@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="id">
+ <head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20261006-00-8f0390a","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo Black":"YACgEZulLoA,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Baloo 2":"YAHO2IcQUcM,0","Barlow Condensed":"YAFdJljEuFc,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Canva Sans":"YAFdJjTk5UU,1","Caveat":"YALBs2ploWQ,0","Cinzel":"YACgEeV8bIQ,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","Courier Prime":"YAD1aFjegN8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Figtree":"YAHO2b-mV7A,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAFdJpU7Kkk,0","Fredoka":"YACgEZml080,0","Georgia":"YAGzXkO0pEM,0","Hanken Grotesk":"YAHO2VB9G0I,0","Helvetica":"YAFcf7zkXN0,0","IBM Plex Mono":"YAFdJkmvhGI,0","IBM Plex Sans":"YAFdJgT0SHI,0","Impact":"YAFcfnjI7Vk,0","Instrument Serif":"YAHFeOnZNEk,0","Inter":"YAFdJvSyp_k,3","Italiana":"YAHO2Toik_w,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YAFdJksXcAk,0","Josefin Sans":"YAFdJjvw9Ps,0","Karla":"YAHO2V2NSXM,0","Lato":"YAFdJuFCnaw,0","Libre Baskerville":"YACgEUFdPdA,0","Lobster":"YAD8SnSjSFI,0","Lora":"YACgEXvxf8Q,0","Manrope":"YAHO2b2feC4,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YAFdtQi73Xs,0","Noto Sans JP":"YAFdJiHXlcI,0","Noto Sans KR":"YAGsojZj-RQ,0","Nunito Sans":"YAFdtQJYB9w,1","Nunito":"YAFdJoNRMmU,1","Oleo Script":"YACgEQQ14jI,0","Oswald":"YACgEQY10lw,0","Outfit":"YAHO2nVlg14,0","Pacifico":"YADLjORQ1u4,0","Playfair Display":"YAFdJhem5V8,1","Plus Jakarta Sans":"YAHO2gdhi18,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YAFdJpYtCxE,1","Raleway":"YAFdJhmxbVQ,1","Roboto Slab":"YAFdJswIKAg,0","Rockwell":"YAFcfyVZnN0,0","Rye":"YACgEdQP21k,0","Sarabun":"YAFdJssSnME,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Space Grotesk":"YAHO2sjPCSM,0","Space Mono":"YADW1-vpsoc,0","Spectral":"YAHO2rVUHIM,0","Times New Roman":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","Ubuntu":"YACgERDU--Q,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0"}}');</script><script src="/_sdk/6542d56fbfe7a3eb.telemetry_sdk.js" integrity="sha512-ECdM0nK7EkwDuOqho2qxgyRQXyBHk9hZqRKMBr+Xsu6zjeHlt+qkO2N2YRiHN7Kg4e1fEHDhjIp4bGJYVypv1g=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petualangan Bilangan</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;family=Fraunces:wght@700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root{--blue:#198ec9;--deep:#075b9b;--yellow:#ffd35a;--ink:#12304a;--sky:#edf8ff;--green:#55ad6c;--coral:#f26c63}
+    *{box-sizing:border-box} body{margin:0;font-family:"DM Sans",sans-serif;color:var(--ink)}
+    .app-shell{position:relative;isolation:isolate;width:100%;min-height:calc(100 * min(var(--vh,1vh),1vh));background:linear-gradient(180deg,#74d5f2 0%,#d5f4ff 43%,#effbdc 100%);overflow-x:hidden}.app-shell:before{content:"";position:fixed;z-index:-1;inset:0;pointer-events:none;background:radial-gradient(circle at 82% 12%,#ffdc70 0 42px,transparent 44px),radial-gradient(ellipse at 18% 24%,#fff 0 35px,transparent 36px),radial-gradient(ellipse at 23% 23%,#fff 0 48px,transparent 49px),radial-gradient(ellipse at 28% 24%,#fff 0 33px,transparent 34px),radial-gradient(ellipse at 68% 35%,#fff 0 30px,transparent 31px),radial-gradient(ellipse at 73% 34%,#fff 0 44px,transparent 45px),radial-gradient(ellipse at 78% 35%,#fff 0 28px,transparent 29px),linear-gradient(165deg,transparent 0 69%,#91c96a 69.2% 79%,transparent 79.2%),linear-gradient(195deg,transparent 0 73%,#5fae62 73.2% 86%,transparent 86.2%);opacity:.9}.app-shell:after{content:"7     +       ×        ÷       24       1.000";position:fixed;z-index:-1;inset:12% 4% auto;text-align:center;color:#176c6c;opacity:.12;font:800 clamp(28px,6vw,72px) Fraunces,serif;letter-spacing:.28em;pointer-events:none}.dark-mode.app-shell{background:linear-gradient(180deg,#101b3b 0%,#213861 62%,#172f40 100%)!important}.dark-mode.app-shell:before{background:radial-gradient(circle at 82% 14%,#f6edbd 0 27px,transparent 29px),radial-gradient(circle at 16% 15%,#fff 1px,transparent 2px),radial-gradient(circle at 32% 9%,#fff 1px,transparent 2px),radial-gradient(circle at 57% 19%,#fff 1.5px,transparent 2.5px),radial-gradient(circle at 73% 9%,#fff 1px,transparent 2px),radial-gradient(circle at 91% 26%,#fff 1px,transparent 2px),linear-gradient(165deg,transparent 0 69%,#315d54 69.2% 79%,transparent 79.2%),linear-gradient(195deg,transparent 0 73%,#224b43 73.2% 86%,transparent 86.2%)}.dark-mode.app-shell:after{color:#f3df91}
+    .top-wave{background:linear-gradient(100deg,#087ab9,#27a5d8);color:#fff;border-bottom:7px solid var(--yellow)}
+    .screen{display:none}.screen.active{display:block;animation:rise .35s ease both}
+    .card{background:#fff;border:2px solid #c6e6f4;border-radius:24px;box-shadow:0 7px 0 #b5ddec}
+    .btn{border:0;border-radius:16px;padding:11px 15px;font-weight:800;cursor:pointer;transition:.18s;display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:44px}
+    .btn:hover{transform:translateY(-2px)}.btn:active{transform:translateY(1px)}.btn:focus,.answer:focus,.menu-card:focus,input:focus,select:focus{outline:3px solid var(--ink);outline-offset:3px}
+    .btn-primary{background:var(--deep);color:white;box-shadow:0 4px 0 #06406d}.btn-yellow{background:var(--yellow);color:#24384b;box-shadow:0 4px 0 #dba61c}.btn-soft{background:#eaf5fb;color:var(--deep)}.btn-danger{background:#c73e36;color:#fff}
+    .menu-card{min-height:145px;text-align:left;padding:20px;cursor:pointer;transition:.2s}.menu-card:hover{transform:translateY(-5px);box-shadow:0 13px 0 #b5ddec}
+    .answer{width:100%;text-align:left;border:2px solid #c9e3ef;background:#fff;border-radius:16px;padding:14px;font-weight:700;cursor:pointer;min-height:52px}.answer:hover{background:#effaff}.answer.correct{background:#d9f4dc;border-color:#55ad6c}.answer.wrong{background:#ffe0dc;border-color:#f26c63}
+    .badge{display:inline-flex;align-items:center;gap:5px;padding:6px 10px;border-radius:999px;font-size:.82rem;font-weight:800;background:#eaf5fb;color:#075b9b}
+    .progress-track{height:13px;border-radius:999px;background:#dcedf7;overflow:hidden}.progress-fill{height:100%;background:linear-gradient(90deg,#55ad6c,#9ad35b);transition:width .35s}
+    .crumb{font-size:.86rem;font-weight:700;color:#4c7086}.mascot{width:68px;height:68px;display:grid;place-items:center;border-radius:50%;background:#ffd35a;font-size:35px}.bubble{background:#dbeafb;padding:14px 17px;border-radius:18px}
+    .lesson-visual{border-radius:18px;padding:12px;color:#fff;font-weight:800;text-align:center}.lv1{background:#198ec9}.lv2{background:#e49635}.lv3{background:#55ad6c}.lv4{background:#f26c63}
+    .certificate{background:#fffdf3;border:14px solid #198ec9;outline:5px solid #ffd35a;outline-offset:-22px;padding:42px;text-align:center}
+    .pill-selected{background:#075b9b!important;color:#fff!important}.hidden{display:none!important}.dark-mode{--ink:#e8f1f8;--sky:#10283c;background:#101b27!important;background-image:radial-gradient(#253a4c 1px,transparent 1px)!important}.dark-mode .card{background:#172a3a;border-color:#31506a;box-shadow:0 7px 0 #102131}.dark-mode .top-wave{position:relative;z-index:1}.dark-mode .app-shell:after{content:"7     +       ×        ÷       24       1.000"}.app-shell .top-wave{position:relative;z-index:1}.app-shell main{position:relative;z-index:0}.app-shell .card{background-color:#fff}.dark-mode .answer{background:#1b3042;color:#e8f1f8;border-color:#45627a}.dark-mode .bubble,.dark-mode .rounded-2xl.bg-sky-50{background:#20394f;color:#e8f1f8}.dark-mode .menu-card{color:#e8f1f8}.dark-mode .text-slate-600,.dark-mode .text-slate-700{color:#c4d4e0}.dark-mode input,.dark-mode select{background:#172a3a;color:#e8f1f8}.hidden{display:none!important}
+    @keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}@keyframes cloud-drift{0%,100%{background-position:0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0}50%{background-position:0 0,12px 0,16px 0,20px 0,-14px 0,-18px 0,-20px 0,0 0,0 0}}.app-shell:before{animation:cloud-drift 24s ease-in-out infinite alternate}.dark-mode.app-shell:before{animation:none}@media(prefers-reduced-motion:reduce){.app-shell:before{animation:none!important}}
+    @media print{body *{visibility:hidden}.certificate,.certificate *{visibility:visible}.certificate{position:absolute;inset:0;width:100%;border:14px solid #198ec9}}
+    @media(max-width:700px){.duo-grid{grid-template-columns:1fr!important}.top-label{display:none}.certificate{padding:26px 16px}.top-actions{gap:5px}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+  </style>
+  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js" type="text/javascript"></script>
+  <script src="/_sdk/6c2ecc939521f244.data_sdk.js" type="text/javascript" integrity="sha512-gRx8s+XsZDN6mSIQu2sivLZysbV0WHhb5kXNUWlgVb5lCMU1foJYukyMEDPv8Tnoocb8iwqB4XdRrWc7oEGzIQ=="></script>
+  <script src="/_sdk/1473331b860cdf5c.editing_sdk.js" type="text/javascript" integrity="sha512-zd/WiNJmdX2rRMgSDon0ny7eSp9O1vzGBXvBfGBu3AbU02LcUa3u+AcBTlNj+As6xOR2OKa6lFg023tgHMv5KQ=="></script>
+  <script src="/_sdk/ab4336f91e694f96.resizing_sdk.js" type="text/javascript" integrity="sha512-cxmeUrBrNlwwLr+tEu/iwM5F3boeK4qDMoH3QjUPqJptkO5NkaDVhQvyIHIn+3EflI5/uubWzkSA78B1tCswgA=="></script>
+ </head>
+ <body data-template-id="__page-root" class="app-shell">
+  <header class="top-wave sticky top-0 z-30">
+   <nav class="w-full max-w-6xl mx-auto px-3 py-3 flex items-center justify-between gap-2" aria-label="Navigasi utama">
+    <div class="flex top-actions gap-2"><button type="button" class="btn btn-soft !py-2 !px-3" onclick="showScreen('home')" aria-label="Beranda"><i data-lucide="house"></i><span class="top-label">Beranda</span></button> <button type="button" class="btn btn-soft !py-2 !px-3" onclick="goBack()" aria-label="Kembali"><i data-lucide="arrow-left"></i><span class="top-label">Kembali</span></button>
+    </div>
+    <div class="text-center min-w-0"><strong data-template-id="nav-title" class="canva-text block font-extrabold truncate"></strong> <span id="breadcrumb" class="text-xs text-blue-100">Beranda</span>
+    </div>
+    <div class="flex top-actions gap-2"><button type="button" class="btn btn-yellow !py-2 !px-3" onclick="toggleSound()" aria-label="Audio"><i id="soundIcon" data-lucide="volume-2"></i><span id="soundLabel" class="top-label">Suara ON</span></button> <button type="button" class="btn btn-yellow !py-2 !px-3" onclick="toggleMusic()" aria-label="Musik"><span>🎵</span><span id="musicLabel" class="top-label">Musik OFF</span></button> <button type="button" class="btn btn-yellow !py-2 !px-3" onclick="toggleTheme()" aria-label="Ganti tema"><i id="themeIcon" data-lucide="moon"></i><span class="top-label">Tema</span></button> <button type="button" class="btn btn-yellow !py-2 !px-3" onclick="toggleFullscreen()" aria-label="Layar penuh"><i data-lucide="maximize"></i></button>
+    </div>
+   </nav>
+  </header>
+  <main class="w-full max-w-6xl mx-auto px-4 py-6">
+   <section id="splash" class="screen active text-center py-10" aria-labelledby="splash-title">
+    <div class="card max-w-3xl mx-auto p-8 md:p-12 relative overflow-hidden">
+     <div class="absolute -right-8 -top-8 text-9xl opacity-10">
+      123
+     </div>
+     <div class="text-6xl mb-3">
+      🚀
+     </div>
+     <p data-template-id="splash-kicker" class="canva-text font-bold text-sky-700 mb-2"></p>
+     <h1 id="splash-title" data-template-id="splash-title" class="canva-text font-extrabold mb-3" style="font-family:Fraunces,serif"></h1>
+     <p data-template-id="splash-subtitle" class="canva-text text-lg mb-6"></p>
+     <div class="flex flex-wrap justify-center gap-2">
+      <span class="badge">📚 Materi</span><span class="badge">🎮 Permainan</span><span class="badge">🏆 Kuis</span><span class="badge">🏅 Sertifikat</span>
+     </div><button data-template-id="start-button" class="canva-button btn btn-primary mt-8" type="button" onclick="startApp()"></button>
+    </div>
+   </section>
+   <section id="profile" class="screen" aria-labelledby="profile-title">
+    <div class="card max-w-xl mx-auto p-7">
+     <h1 id="profile-title" class="text-3xl font-extrabold">Halo, Sahabat Matematika! 👋</h1>
+     <p class="mt-2 text-slate-600">Mari siapkan profil belajar sederhana terlebih dahulu.</p>
+     <form id="profileForm" class="grid gap-4 mt-6">
+      <div>
+       <label for="studentName" class="font-bold block mb-1">Nama</label><input id="studentName" required class="w-full rounded-xl border-2 border-sky-200 p-3" placeholder="Contoh: Aisyah">
+      </div>
+      <div>
+       <label for="studentClass" class="font-bold block mb-1">Kelas</label><input id="studentClass" class="w-full rounded-xl border-2 border-sky-200 p-3" placeholder="Contoh: IV A">
+      </div>
+      <div>
+       <label for="studentSchool" class="font-bold block mb-1">Sekolah</label><input id="studentSchool" class="w-full rounded-xl border-2 border-sky-200 p-3" placeholder="Nama sekolah">
+      </div>
+      <div class="flex gap-3 flex-wrap">
+       <button class="btn btn-primary" type="submit">Mulai Belajar</button><button class="btn btn-soft" type="button" onclick="skipProfile()">Lewati</button>
+      </div>
+     </form>
+    </div>
+   </section>
+   <section id="home" class="screen" aria-labelledby="home-title">
+    <div class="card p-6 md:p-8 mb-6">
+     <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+      <div>
+       <p data-template-id="home-kicker" class="canva-text font-bold text-sky-700"></p>
+       <h1 id="home-title" data-template-id="home-title" class="canva-text font-extrabold" style="font-family:Fraunces,serif"></h1>
+       <p data-template-id="home-subtitle" class="canva-text mt-2"></p>
+      </div>
+      <div class="w-full md:w-72">
+       <div class="flex justify-between text-sm font-bold">
+        <span>Progress Belajar</span><span id="progressText">0%</span>
+       </div>
+       <div class="progress-track mt-2">
+        <div id="progressBar" class="progress-fill" style="width:0%"></div>
+       </div>
+       <p id="starText" class="mt-2 text-sm font-bold"></p>
+      </div>
+     </div>
+     <div id="quickActivity" class="mt-5 p-4 rounded-2xl bg-sky-50 border border-sky-100"></div>
+    </div>
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4"><button class="menu-card card" onclick="openMaterials()"><span class="text-4xl">📚</span><h2 class="font-extrabold text-lg mt-3">Materi</h2><p class="text-sm text-slate-600">9 misi belajar</p></button> <button class="menu-card card" onclick="openGames()"><span class="text-4xl">🎮</span><h2 class="font-extrabold text-lg mt-3">Permainan</h2><p class="text-sm text-slate-600">Main sambil belajar</p></button> <button class="menu-card card" onclick="openPractice()"><span class="text-4xl">🧩</span><h2 class="font-extrabold text-lg mt-3">Latihan</h2><p class="text-sm text-slate-600">Level dan petunjuk</p></button> <button class="menu-card card" onclick="openQuizSetup()"><span class="text-4xl">🏆</span><h2 class="font-extrabold text-lg mt-3">Kuis</h2><p class="text-sm text-slate-600">Solo atau duo</p></button> <button class="menu-card card" onclick="openCertificate()"><span class="text-4xl">🏅</span><h2 class="font-extrabold text-lg mt-3">Sertifikat</h2><p class="text-sm text-slate-600">Siap cetak</p></button> <button class="menu-card card" onclick="openProgress()"><span class="text-4xl">📊</span><h2 class="font-extrabold text-lg mt-3">Progres</h2><p class="text-sm text-slate-600">Bintang dan badge</p></button> <button class="menu-card card" onclick="openHelp()"><span class="text-4xl">❓</span><h2 class="font-extrabold text-lg mt-3">Cara Bermain</h2><p class="text-sm text-slate-600">Petunjuk interaksi</p></button> <button class="menu-card card" onclick="openTeacher()"><span class="text-4xl">👩‍🏫</span><h2 class="font-extrabold text-lg mt-3">Mode Guru</h2><p class="text-sm text-slate-600">Kelas dan pengaturan</p></button>
+    </div>
+   </section>
+   <section id="materials" class="screen">
+    <div class="flex flex-col md:flex-row gap-3 justify-between md:items-center mb-5">
+     <div>
+      <p class="crumb">Beranda › Materi</p>
+      <h1 class="text-3xl font-extrabold">Peta Petualangan</h1>
+      <p class="text-slate-600">Urutan belajar direkomendasikan, tetapi semua materi dapat dibuka.</p>
+     </div>
+     <div>
+      <label for="materialSearch" class="sr-only">Cari materi</label><input id="materialSearch" oninput="renderModules()" class="rounded-xl border-2 border-sky-200 p-3" placeholder="🔎 Cari materi...">
+     </div>
+    </div>
+    <div id="moduleList" class="grid md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+   </section>
+   <section id="lesson" class="screen">
+    <div class="flex justify-between items-center gap-3 mb-4">
+     <p id="lessonCrumb" class="crumb"></p><button class="btn btn-soft" onclick="openMaterials()">← Materi</button>
+    </div>
+    <article class="card p-5 md:p-8">
+     <div class="flex gap-4 items-start">
+      <div class="mascot" id="lessonMascot">
+       👧🏽
+      </div>
+      <div class="bubble flex-1">
+       <b id="guideName">Helen</b>: <span id="mascotTalk"></span>
+      </div>
+     </div>
+     <div class="flex flex-wrap justify-between gap-3 mt-6">
+      <div>
+       <span id="lessonBadge" class="badge"></span>
+       <h1 id="lessonTitle" class="text-3xl font-extrabold mt-2"></h1>
+      </div><span id="moduleStatus" class="badge"></span>
+     </div>
+     <p id="lessonIntro" class="text-lg mt-3"></p>
+     <div class="grid grid-cols-2 md:grid-cols-4 gap-3 my-6" id="concreteVisual"></div>
+     <div class="rounded-2xl bg-sky-50 border-2 border-sky-100 p-5">
+      <p class="font-bold text-sky-800">Tahap 3 — Simbol Matematika</p>
+      <p id="symbolText" class="text-2xl font-extrabold mt-2"></p>
+      <p id="explainText" class="mt-2"></p>
+     </div>
+     <div id="lessonInteract" class="mt-6"></div>
+     <p id="lessonFeedback" class="font-bold mt-4" aria-live="polite"></p>
+     <div class="flex gap-3 flex-wrap mt-6">
+      <button class="btn btn-yellow" onclick="renderLesson(currentModule)">🔄 Coba Lagi</button><button class="btn btn-primary" onclick="finishModule()">✅ Selesaikan Materi</button><button class="btn btn-soft" onclick="nextModule()">Lanjut →</button>
+     </div>
+    </article>
+   </section>
+   <section id="games" class="screen">
+    <p class="crumb">Beranda › Permainan</p>
+    <h1 class="text-3xl font-extrabold">Arena Permainan</h1>
+    <p class="text-slate-600 mb-5">Pilih permainan, baca instruksinya, lalu kumpulkan bintang.</p>
+    <div class="grid md:grid-cols-2 gap-4"><button class="card p-6 text-left" onclick="startGame('hunt')"><span class="text-4xl">🔎</span><h2 class="font-extrabold text-xl mt-3">Berburu Angka</h2><p class="text-slate-600">Cari bilangan terbesar.</p></button> <button class="card p-6 text-left" onclick="startGame('digits')"><span class="text-4xl">🔢</span><h2 class="font-extrabold text-xl mt-3">Susun Bilangan</h2><p class="text-slate-600">Klik digit sesuai urutan.</p></button> <button class="card p-6 text-left" onclick="startGame('match')"><span class="text-4xl">🔗</span><h2 class="font-extrabold text-xl mt-3">Pasangkan</h2><p class="text-slate-600">Jawab pertanyaan membaca bilangan.</p></button> <button class="card p-6 text-left" onclick="startGame('path')"><span class="text-4xl">🗺️</span><h2 class="font-extrabold text-xl mt-3">Petualangan Operasi</h2><p class="text-slate-600">Selesaikan operasi hitung.</p></button>
+    </div>
+   </section>
+   <section id="gamePlay" class="screen">
+    <div class="flex justify-between items-center mb-4">
+     <p class="crumb">Permainan › <span id="gameCrumb"></span></p><span id="gameScore" class="badge">⭐ 0</span>
+    </div>
+    <div class="card p-6 md:p-8 text-center">
+     <h1 id="gameTitle" class="text-3xl font-extrabold"></h1>
+     <p id="gameInstruction" class="text-lg mt-3"></p>
+     <div id="gameArea" class="mt-6"></div>
+     <p id="gameFeedback" class="font-bold mt-5" aria-live="polite"></p>
+     <div class="flex justify-center gap-3 flex-wrap mt-5">
+      <button class="btn btn-primary" onclick="nextGameQuestion()">Soal Berikutnya</button><button class="btn btn-yellow" onclick="startGame(currentGame)">🔄 Coba Lagi</button><button class="btn btn-soft" onclick="openGames()">Kembali</button>
+     </div>
+    </div>
+   </section>
+   <section id="practice" class="screen">
+    <p class="crumb">Beranda › Latihan</p>
+    <div class="flex flex-wrap justify-between gap-3">
+     <div>
+      <h1 class="text-3xl font-extrabold">Latihan Cerdas</h1>
+      <p class="text-slate-600">Belajar pelan-pelan dengan bantuan bertahap.</p>
+     </div>
+     <div class="flex gap-2">
+      <button class="btn btn-soft" onclick="togglePracticeMode()" id="modeBtn">Mode Belajar</button>
+     </div>
+    </div>
+    <div id="practiceCategories" class="flex flex-wrap gap-2 my-5"></div>
+    <div class="flex flex-wrap gap-2 mb-5" id="difficultyButtons"></div>
+    <div class="card p-6">
+     <div id="practiceArea"></div>
+    </div>
+   </section>
+   <section id="quizSetup" class="screen">
+    <div class="card p-6 max-w-2xl mx-auto">
+     <p class="crumb">Beranda › Kuis</p>
+     <h1 class="text-3xl font-extrabold">Kuis Matematika</h1>
+     <p class="mt-2 text-slate-600">10 soal × 10 poin = 100 poin untuk setiap pemain.</p>
+     <div class="grid md:grid-cols-2 gap-4 mt-6">
+      <div>
+       <label for="quizDifficulty" class="font-bold block mb-1">Level</label><select id="quizDifficulty" class="w-full border-2 border-sky-200 rounded-xl p-3"><option value="easy">🟢 Mudah</option><option value="medium" selected>🟡 Sedang</option><option value="hard">🔴 Tantangan</option></select>
+      </div>
+      <div>
+       <label for="timerOn" class="font-bold block mb-1">Timer</label><select id="timerOn" class="w-full border-2 border-sky-200 rounded-xl p-3"><option value="false" selected>Timer OFF</option><option value="true">Timer ON — 10 menit</option></select>
+      </div>
+     </div>
+     <div class="grid md:grid-cols-2 gap-3 mt-6">
+      <button class="btn btn-primary min-h-28" onclick="startQuiz('solo')">👤 Mode Solo<br><small>10 soal</small></button><button class="btn btn-yellow min-h-28" onclick="startQuiz('duo')">👥 Duo Quiz<br><small>2 pemain, 1 layar</small></button>
+     </div>
+    </div>
+   </section>
+   <section id="quiz" class="screen">
+    <div class="flex flex-wrap justify-between gap-3 items-center mb-4">
+     <p id="quizCounter" class="font-bold"></p>
+     <div class="flex gap-2">
+      <span id="timerText" class="badge hidden">⏱ 10:00</span><button id="pauseBtn" class="btn btn-soft hidden" onclick="togglePause()">⏸️ Pause</button>
+     </div>
+    </div>
+    <div id="quizContent"></div>
+   </section>
+   <section id="quizResult" class="screen">
+    <div class="card p-7 max-w-3xl mx-auto text-center">
+     <div class="text-5xl">
+      🏆
+     </div>
+     <h1 class="text-3xl font-extrabold mt-3">Hasil Belajarmu</h1>
+     <div id="resultContent" class="mt-5"></div>
+     <div class="flex justify-center gap-3 flex-wrap mt-6">
+      <button class="btn btn-primary" onclick="openCertificate()">🏅 Sertifikat</button><button class="btn btn-yellow" onclick="reviewQuiz()">📖 Review Jawaban</button><button class="btn btn-soft" onclick="openQuizSetup()">🔄 Kuis Lagi</button>
+     </div>
+    </div>
+   </section>
+   <section id="review" class="screen">
+    <p class="crumb">Hasil Kuis › Review</p>
+    <h1 class="text-3xl font-extrabold mb-5">Review Jawaban</h1>
+    <div id="reviewContent" class="space-y-4"></div><button class="btn btn-soft mt-5" onclick="showScreen('quizResult')">← Hasil Kuis</button>
+   </section>
+   <section id="certificate" class="screen">
+    <div class="flex justify-between gap-3 flex-wrap mb-5">
+     <p class="crumb">Beranda › Sertifikat</p><button class="btn btn-primary" onclick="window.print()">🖨️ Cetak / Simpan PDF</button>
+    </div>
+    <article class="certificate">
+     <p class="tracking-[.2em] font-bold text-sky-700">🏅 PETUALANGAN BILANGAN 🏅</p>
+     <h1 class="text-3xl md:text-5xl font-extrabold mt-5" style="font-family:Fraunces,serif">SERTIFIKAT PRESTASI BELAJAR</h1>
+     <p class="mt-7 text-lg">Diberikan kepada</p>
+     <h2 id="certName" class="text-4xl font-extrabold text-sky-700 mt-2"></h2>
+     <p id="certClass" class="mt-2"></p>
+     <p id="certSchool" class="mt-1"></p>
+     <p class="mt-8">Telah menyelesaikan pembelajaran</p>
+     <p class="text-2xl font-extrabold text-sky-700">MULTIMEDIA MATEMATIKA KELAS IV</p>
+     <p>Bilangan Cacah sampai 10.000</p>
+     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8 max-w-3xl mx-auto">
+      <div>
+       <b>Skor</b>
+       <p id="certScore" class="text-2xl font-extrabold"></p>
+      </div>
+      <div>
+       <b>Predikat</b>
+       <p id="certGrade" class="font-extrabold"></p>
+      </div>
+      <div>
+       <b>Tanggal</b>
+       <p id="certDate" class="font-bold"></p>
+      </div>
+      <div>
+       <b>No. Sertifikat</b>
+       <p id="certNo" class="font-bold text-xs"></p>
+      </div>
+     </div>
+     <div class="mt-12 grid grid-cols-2 gap-8">
+      <p class="border-t border-slate-500 pt-2">Siswa</p>
+      <p class="border-t border-slate-500 pt-2">Guru / Orang Tua</p>
+     </div>
+    </article>
+   </section>
+   <section id="progress" class="screen">
+    <p class="crumb">Beranda › Perkembanganku</p>
+    <div class="card p-7">
+     <h1 class="text-3xl font-extrabold">📊 Perkembanganku</h1>
+     <div id="progressDetails" class="mt-5"></div>
+     <section class="mt-6" aria-labelledby="quiz-history-heading">
+      <h2 id="quiz-history-heading" class="text-xl font-extrabold">Riwayat Kuis</h2>
+      <div id="quizHistoryList" class="mt-3 grid gap-2"></div>
+     </section>
+    </div>
+   </section>
+   <section id="help" class="screen">
+    <div class="card p-7">
+     <h1 class="text-3xl font-extrabold">❓ Cara Bermain</h1>
+     <div class="grid md:grid-cols-2 gap-4 mt-5 text-slate-700">
+      <p><b>Materi:</b> pilih misi, pelajari contoh konkret, lalu selesaikan aktivitas.</p>
+      <p><b>Latihan:</b> pilih jawaban. Saat belajar, gunakan Petunjuk 1–3 bila perlu.</p>
+      <p><b>Permainan:</b> klik jawaban atau digit. Semua permainan punya tombol coba lagi.</p>
+      <p><b>Duo Quiz:</b> dua pemain mengerjakan soal setara di satu layar.</p>
+      <p><b>Bintang:</b> diperoleh saat menyelesaikan materi, permainan, dan jawaban benar.</p>
+      <p><b>Sertifikat:</b> tersedia setelah kamu mencoba kuis dan dapat dicetak.</p>
+      <p><b>Tema dan suara:</b> pilih tombol Tema untuk mengganti tampilan terang atau gelap. Audio dapat dimatikan kapan saja.</p>
+     </div>
+    </div>
+   </section>
+   <section id="teacher" class="screen">
+    <div class="card p-7">
+     <p class="crumb">Beranda › Mode Guru</p>
+     <h1 class="text-3xl font-extrabold">👩‍🏫 Mode Guru</h1>
+     <p class="mt-2 text-slate-600">Statistik ini tersedia pada perangkat dan browser yang sedang digunakan.</p>
+     <div id="teacherStats" class="grid md:grid-cols-4 gap-3 mt-5"></div>
+     <div class="flex flex-wrap gap-3 mt-6">
+      <button class="btn btn-primary" onclick="setClassroomMode()">⛶ Mode Kelas</button><button class="btn btn-yellow" onclick="openQuizSetup()">Mulai Kuis</button><button class="btn btn-soft" onclick="showResetConfirm()">⚙️ Reset Progres</button>
+     </div>
+     <div id="resetConfirm" class="hidden mt-5 p-4 rounded-xl bg-red-50 border border-red-200">
+      <b>Apakah kamu yakin ingin menghapus semua progres?</b>
+      <div class="flex gap-2 mt-3">
+       <button class="btn btn-danger" onclick="resetProgress()">Ya, Hapus</button><button class="btn btn-soft" onclick="hideResetConfirm()">Batal</button>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <script>
+const modules=[
+ {title:"Membaca dan Menulis Bilangan",icon:"🔤",type:"read",guide:"Helen",intro:"Kita membaca bilangan dari ribuan ke satuan. Angka nol tidak perlu dibaca.",symbol:"3.286",explain:"3.000 + 200 + 80 + 6 = 3.286",visual:["3 ribuan","2 ratusan","8 puluhan","6 satuan"]},
+ {title:"Nilai Tempat",icon:"🏠",type:"place",guide:"Azizah",intro:"Setiap angka mempunyai rumah: ribuan, ratusan, puluhan, dan satuan.",symbol:"2.150",explain:"Angka 5 berada pada tempat puluhan. Nilainya 50.",visual:["2 ribuan","1 ratusan","5 puluhan","0 satuan"]},
+ {title:"Membandingkan dan Mengurutkan",icon:"⚖️",type:"compare",guide:"Slamet",intro:"Bandingkan dari nilai tempat terbesar ke terkecil.",symbol:"4.352 < 4.365",explain:"Ribuan dan ratusan sama. Bandingkan angka puluhan: 5 kurang dari 6.",visual:["4 ribuan","3 ratusan","5 puluhan","2 satuan"]},
+ {title:"Komposisi dan Dekomposisi",icon:"🧱",type:"compose",guide:"Karel",intro:"Bilangan dapat dibangun dari nilai tempat dan diuraikan kembali.",symbol:"6.348",explain:"6.000 + 300 + 40 + 8 = 6.348",visual:["6 ribuan","3 ratusan","4 puluhan","8 satuan"]},
+ {title:"Penjumlahan sampai 1.000",icon:"➕",type:"add",guide:"Asep",intro:"Jumlahkan satuan, puluhan, lalu ratusan.",symbol:"189 + 245 = 434",explain:"9 + 5 = 14, tulis 4 simpan 1. Lanjutkan ke puluhan dan ratusan.",visual:["189 jeruk","245 jeruk","Simpan 1","434 jeruk"]},
+ {title:"Pengurangan sampai 1.000",icon:"➖",type:"sub",guide:"Putu",intro:"Jika satuan belum cukup, ambil satu puluhan.",symbol:"241 − 129 = 112",explain:"1 satuan mengambil 1 puluhan menjadi 11 satuan. Lalu 11 − 9 = 2.",visual:["241 kubus","129 diambil","Pinjam 1 puluhan","112 sisa"]},
+ {title:"Perkalian sampai 100",icon:"✖️",type:"mul",guide:"Asep",intro:"Perkalian adalah penjumlahan berulang dari kelompok yang sama banyak.",symbol:"4 × 6 = 24",explain:"6 + 6 + 6 + 6 = 24.",visual:["🍎🍎🍎🍎🍎🍎","🍎🍎🍎🍎🍎🍎","🍎🍎🍎🍎🍎🍎","🍎🍎🍎🍎🍎🍎"]},
+ {title:"Pembagian sampai 100",icon:"➗",type:"div",guide:"Azizah",intro:"Pembagian berarti membagi benda ke kelompok sama banyak.",symbol:"24 ÷ 4 = 6",explain:"24 benda dibagi ke 4 kelompok. Setiap kelompok mendapat 6.",visual:["🍬🍬🍬🍬🍬🍬","🍬🍬🍬🍬🍬🍬","🍬🍬🍬🍬🍬🍬","🍬🍬🍬🍬🍬🍬"]},
+ {title:"Faktor dan Kelipatan",icon:"⭐",type:"factor",guide:"Karel",intro:"Faktor membagi habis suatu bilangan. Kelipatan berasal dari penjumlahan berulang.",symbol:"Faktor 12: 1, 2, 3, 4, 6, 12",explain:"Kelipatan 3 adalah 3, 6, 9, 12, dan seterusnya.",visual:["1 × 12","2 × 6","3 × 4","Kelipatan 3"]}
+];
+const topics={read:"Membaca Bilangan",place:"Nilai Tempat",compare:"Membandingkan",compose:"Komposisi",add:"Penjumlahan",sub:"Pengurangan",mul:"Perkalian",div:"Pembagian",factor:"Faktor dan Kelipatan"};
+const defaultState={name:"",kelas:"Kelas IV",school:"",done:[],stars:0,streak:0,sound:true,music:false,lastScore:0,games:0,badges:[],lastActivity:"Belum ada aktivitas",studyMinutes:0,quizHistory:[],settings:{mode:"learn"}};
+let state=loadState(),history=["splash"],currentModule=0,currentGame="",gameScore=0,practiceType="add",practiceDifficulty="easy",practiceMode="learn",practiceQuestion=null,practiceWrong=0;
+let quizMode="",quizSets=[],quizIndex=0,quizScores=[0,0],quizAnswered=[false,false],quizReview=[[],[]],timer=null,timeLeft=600,paused=false;
+const $=id=>document.getElementById(id),fmt=n=>Number(n).toLocaleString("id-ID");
+function loadState(){try{return {...defaultState,...JSON.parse(localStorage.getItem("mpiMatematikaKelas4")||"{}")}}catch(e){return {...defaultState}}}
+function save(){try{localStorage.setItem("mpiMatematikaKelas4",JSON.stringify(state))}catch(e){} updateHeader()}
+let audioContext=null,musicTimer=null,musicStep=0;function ensureAudio(){audioContext=audioContext||new(window.AudioContext||window.webkitAudioContext)();if(audioContext.state==="suspended")audioContext.resume();return audioContext}function playTone(kind="tap"){if(!state.sound)return;try{let ac=ensureAudio(),now=ac.currentTime,notes=kind==="correct"?[660,880]:kind==="wrong"?[220]:kind==="page"?[440,554]:[520],gain=ac.createGain();gain.connect(ac.destination);gain.gain.setValueAtTime(.0001,now);gain.gain.exponentialRampToValueAtTime(kind==="correct"?.13:.12,now+.02);gain.gain.exponentialRampToValueAtTime(.0001,now+.2);notes.forEach((hz,i)=>{let osc=ac.createOscillator();osc.type="sine";osc.frequency.setValueAtTime(hz,now+i*.07);osc.connect(gain);osc.start(now+i*.07);osc.stop(now+i*.07+.21)})}catch(e){}}function musicNote(){if(!state.music||!state.sound)return;try{let ac=ensureAudio(),now=ac.currentTime,scale=[261.63,293.66,329.63,392,440,523.25],root=[0,3,5,3][Math.floor(musicStep/4)%4],chord=[scale[root],scale[(root+2)%scale.length],scale[(root+4)%scale.length]],gain=ac.createGain();gain.gain.setValueAtTime(.0001,now);gain.gain.exponentialRampToValueAtTime(.012,now+.12);gain.gain.exponentialRampToValueAtTime(.0001,now+1.7);chord.forEach((hz,i)=>{let osc=ac.createOscillator();osc.type="sine";osc.frequency.value=hz/2;osc.connect(gain);osc.start(now);osc.stop(now+1.75)});if(musicStep%2===1){let melody=ac.createOscillator(),mg=ac.createGain();mg.gain.setValueAtTime(.0001,now);mg.gain.exponentialRampToValueAtTime(.006,now+.04);mg.gain.exponentialRampToValueAtTime(.0001,now+.55);melody.type="sine";melody.frequency.value=scale[Math.floor(Math.random()*scale.length)];melody.connect(mg);mg.connect(ac.destination);melody.start(now);melody.stop(now+.58)}musicStep++}catch(e){}}function setMusic(on){state.music=on;save();if(on){try{ensureAudio();musicNote();if(!musicTimer)musicTimer=setInterval(musicNote,1800)}catch(e){state.music=false}}else if(musicTimer){clearInterval(musicTimer);musicTimer=null}if($("musicLabel"))$("musicLabel").textContent=state.music?"Musik ON":"Musik OFF"}function toggleMusic(){setMusic(!state.music)}function showScreen(id,push=true){document.querySelectorAll(".screen").forEach(x=>x.classList.remove("active"));$(id).classList.add("active");if(push&&history.at(-1)!==id)history.push(id);window.scrollTo({top:0,behavior:"smooth"});updateHeader();if(window.lucide)lucide.createIcons();playTone("page")}document.addEventListener("pointerdown",()=>{if(state.sound&&state.music)try{setMusic(true)}catch(e){}},{once:true});document.addEventListener("click",e=>{if(e.target.closest("button")){playTone("tap");if(state.sound&&state.music&&!musicTimer)setMusic(true)}});
+function goBack(){if(history.length>1){history.pop();showScreen(history.at(-1),false)}else showScreen("home")}
+function updateHeader(){let p=Math.round(state.done.length/modules.length*100);$("breadcrumb").textContent=history.at(-1)==="home"?"Beranda":history.at(-1);$("soundLabel").textContent=state.sound?"Suara ON":"Suara OFF";$("soundIcon").setAttribute("data-lucide",state.sound?"volume-2":"volume-x");if($("musicLabel"))$("musicLabel").textContent=state.music&&state.sound?"Musik ON":"Musik OFF";if($("progressText")){$("progressText").textContent=p+"%";$("progressBar").style.width=p+"%";$("starText").textContent=`⭐ ${state.stars} bintang · 🔥 Streak ${state.streak} hari`}}
+function speak(t){if(state.sound&&"speechSynthesis"in window){speechSynthesis.cancel();speechSynthesis.speak(new SpeechSynthesisUtterance(t))}}
+function toggleSound(){state.sound=!state.sound;if(!state.sound){state.music=false;if(musicTimer){clearInterval(musicTimer);musicTimer=null}}save();if($("musicLabel"))$("musicLabel").textContent=state.music?"Musik ON":"Musik OFF";if(state.sound){speak("Audio aktif");if(state.music)setMusic(true)}}function toggleTheme(){document.body.classList.toggle("dark-mode");state.darkMode=document.body.classList.contains("dark-mode");save();let icon=$("themeIcon");if(icon)icon.setAttribute("data-lucide",state.darkMode?"sun":"moon");if(window.lucide)lucide.createIcons();playTone("tap")}
+function startApp(){if(!state.name)showScreen("profile");else{showScreen("home");renderHome()} }
+$("profileForm").addEventListener("submit",e=>{e.preventDefault();state.name=$("studentName").value.trim()||"Sahabat Matematika";state.kelas=$("studentClass").value.trim()||"Kelas IV";state.school=$("studentSchool").value.trim()||"Sekolahku";save();renderHome();showScreen("home");speak("Selamat datang "+state.name)});
+function skipProfile(){state.name="Sahabat Matematika";save();renderHome();showScreen("home")}
+function renderHome(){let p=Math.round(state.done.length/modules.length*100);$("quickActivity").innerHTML=`<b>⚡ Aktivitas terakhir:</b> ${state.lastActivity}<br><span class="text-sm">📚 ${state.done.length}/${modules.length} materi · 🎯 Skor terbaik: ${state.lastScore}/100 · 🏅 ${state.badges.length} badge</span>`;$("[data-template-id='home-kicker']").textContent=`Halo, ${state.name||"Sahabat Matematika"}!`;updateHeader()}
+function openMaterials(){renderModules();showScreen("materials")}
+function statusOf(i){return state.done.includes(i)?"✅ Selesai":i===currentModule?"▶️ Sedang dipelajari":"🔒 Belum dibuka"}
+function renderModules(){let q=$("materialSearch").value.toLowerCase();$("moduleList").innerHTML=modules.map((m,i)=>({...m,i})).filter(m=>m.title.toLowerCase().includes(q)).map(m=>`<button class="card menu-card" onclick="openLesson(${m.i})"><div class="flex justify-between"><span class="text-3xl">${m.icon}</span><span class="badge">${statusOf(m.i)}</span></div><h2 class="font-extrabold text-lg mt-3">${m.i+1}. ${m.title}</h2><p class="text-sm mt-2 text-slate-600">${m.i===state.done.length?"⭐ Rekomendasi berikutnya":"Buka materi →"}</p></button>`).join("")||"<p>Materi tidak ditemukan.</p>"}
+function openLesson(i){currentModule=i;renderLesson(i);showScreen("lesson")}
+function renderLesson(i){let m=modules[i];$("lessonCrumb").textContent=`Materi › ${m.title}`;$("lessonBadge").textContent=`Misi ${i+1} dari 9`;$("moduleStatus").textContent=statusOf(i);$("lessonTitle").textContent=m.title;$("lessonIntro").textContent=m.intro;$("guideName").textContent=m.guide;$("mascotTalk").textContent="Ayo belajar selangkah demi selangkah. Kamu pasti bisa!";$("symbolText").textContent=m.symbol;$("explainText").textContent=m.explain;$("concreteVisual").innerHTML=m.visual.map((v,j)=>`<div class="lesson-visual lv${j+1}">${v}</div>`).join("");$("lessonFeedback").textContent="";let q=makeQuestion(m.type,"easy");$("lessonInteract").innerHTML=questionHTML(q,"lesson");window.lessonQuestion=q}
+function questionHTML(q,prefix){return `<div class="mt-6"><h2 class="text-xl font-extrabold">Ayo Mencoba</h2><p class="mt-2 font-bold text-lg">${q.question}</p><div class="grid md:grid-cols-2 gap-3 mt-4">${q.options.map((o,i)=>`<button class="answer" onclick="answerLesson(${i})">${String.fromCharCode(65+i)}. ${o}</button>`).join("")}</div></div>`}
+function answerLesson(i){let q=window.lessonQuestion,ok=i===q.answer;document.querySelectorAll("#lessonInteract .answer").forEach((b,x)=>{b.disabled=true;if(x===q.answer)b.classList.add("correct");if(x===i&&!ok)b.classList.add("wrong")});$("lessonFeedback").textContent=ok?"🎉 Hebat! "+q.explanation:"Belum tepat. Yuk perhatikan lagi: "+q.explanation;playTone(ok?"correct":"wrong");speak(ok?"Hebat, jawabanmu benar":"Belum tepat, ayo belajar lagi")}
+function finishModule(){if(!state.done.includes(currentModule)){state.done.push(currentModule);state.stars+=3;state.streak++;state.lastActivity="Menyelesaikan "+modules[currentModule].title;awardBadges();save()}speak("Hebat, materi selesai");openMaterials()}
+function nextModule(){openLesson((currentModule+1)%modules.length)}
+function openGames(){showScreen("games")}
+function startGame(type){currentGame=type;gameScore=0;renderGame();showScreen("gamePlay")}
+function renderGame(){let q;if(currentGame==="hunt"){let nums=shuffle(Array.from({length:4},()=>rand(1000,9999))),ans=Math.max(...nums);$("gameTitle").textContent="Berburu Angka";$("gameInstruction").textContent="Tujuan: pilih bilangan terbesar."; $("gameArea").innerHTML=`<div class="grid grid-cols-2 gap-3">${nums.map(n=>`<button class="answer text-center text-2xl" onclick="gameAnswer(${n===ans})">${fmt(n)}</button>`).join("")}</div>`}else if(currentGame==="digits"){$("gameTitle").textContent="Susun Bilangan";$("gameInstruction").textContent="Contoh: susun 7, 5, 4, 2 dari terbesar ke terkecil.";$("gameArea").innerHTML=`<div class="flex gap-3 justify-center flex-wrap">${shuffle([7,5,4,2]).map(n=>`<button class="btn btn-yellow text-xl" onclick="digitGame(${n})">${n}</button>`).join("")}</div><p id="digitOut" class="text-3xl font-extrabold mt-5">Bilangan: </p>`}else{q=makeQuestion(currentGame==="path"?"add":"read","easy");window.gameQuestion=q;$("gameTitle").textContent=currentGame==="path"?"Petualangan Operasi":"Pasangkan Bilangan";$("gameInstruction").textContent="Tujuan: pilih jawaban yang tepat."; $("gameArea").innerHTML=questionHTML(q,"game").replace(/answerLesson\(/g,"answerGame(")}$("gameScore").textContent="⭐ "+gameScore;$("gameCrumb").textContent=$("gameTitle").textContent;$("gameFeedback").textContent=""}
+function answerGame(i){let q=window.gameQuestion;gameAnswer(i===q.answer)}
+function gameAnswer(ok){$("gameFeedback").textContent=ok?"🎉 Hebat! Kamu mendapatkan satu bintang.":"Belum tepat. Coba soal berikutnya, ya!";if(ok){gameScore++;state.stars++;state.games++;state.lastActivity="Bermain "+$("gameTitle").textContent;save();speak("Hebat")}}
+function digitGame(n){let out=$("digitOut");out.textContent+=n;if(out.textContent==="Bilangan: 7542")gameAnswer(true)}
+function nextGameQuestion(){renderGame()}
+function openPractice(){let cats=Object.entries(topics);$("practiceCategories").innerHTML=cats.map(([k,v])=>`<button class="btn btn-soft ${k===practiceType?"pill-selected":""}" onclick="practiceType='${k}';renderPractice()">${v}</button>`).join("");$("difficultyButtons").innerHTML=[["easy","🟢 Mudah"],["medium","🟡 Sedang"],["hard","🔴 Tantangan"]].map(([k,v])=>`<button class="btn btn-soft ${k===practiceDifficulty?"pill-selected":""}" onclick="practiceDifficulty='${k}';renderPractice()">${v}</button>`).join("");showScreen("practice");renderPractice()}
+function togglePracticeMode(){practiceMode=practiceMode==="learn"?"exam":"learn";$("modeBtn").textContent=practiceMode==="learn"?"Mode Belajar":"Mode Ujian";renderPractice()}
+function renderPractice(){openPracticeButtons();practiceQuestion=makeQuestion(practiceType,practiceDifficulty);practiceWrong=0;$("practiceArea").innerHTML=`<p class="badge">${topics[practiceType]} · ${practiceDifficulty==="easy"?"🟢 Mudah":practiceDifficulty==="medium"?"🟡 Sedang":"🔴 Tantangan"} · ${practiceMode==="learn"?"Mode Belajar":"Mode Ujian"}</p><h2 class="text-xl font-extrabold mt-4">${practiceQuestion.question}</h2><div class="grid md:grid-cols-2 gap-3 mt-4">${practiceQuestion.options.map((x,i)=>`<button class="answer" onclick="answerPractice(${i})">${String.fromCharCode(65+i)}. ${x}</button>`).join("")}</div><div id="practiceFeedback" class="mt-4 font-bold" aria-live="polite"></div><div id="hintButtons" class="flex flex-wrap gap-2 mt-4"></div><button class="btn btn-primary mt-5" onclick="renderPractice()">🔄 Soal Baru</button>`;renderHintButtons()}
+function openPracticeButtons(){if($("practiceCategories")){$("practiceCategories").innerHTML=Object.entries(topics).map(([k,v])=>`<button class="btn btn-soft ${k===practiceType?"pill-selected":""}" onclick="practiceType='${k}';renderPractice()">${v}</button>`).join("");$("difficultyButtons").innerHTML=[["easy","🟢 Mudah"],["medium","🟡 Sedang"],["hard","🔴 Tantangan"]].map(([k,v])=>`<button class="btn btn-soft ${k===practiceDifficulty?"pill-selected":""}" onclick="practiceDifficulty='${k}';renderPractice()">${v}</button>`).join("")}}
+function renderHintButtons(){if(practiceMode==="learn")$("hintButtons").innerHTML=`<button class="btn btn-soft" onclick="showHint(1)">💡 Petunjuk 1</button><button class="btn btn-soft" onclick="showHint(2)">💡 Petunjuk 2</button><button class="btn btn-soft" onclick="showHint(3)">💡 Petunjuk 3</button><button class="btn btn-yellow" onclick="showHint(4)">Lihat Jawaban</button>`}
+function showHint(n){let q=practiceQuestion,msg=n===1?q.hints[0]:n===2?q.hints[1]:n===3?q.hints[2]:"Jawaban: "+q.options[q.answer]+". "+q.explanation;$("practiceFeedback").textContent=msg;speak(msg)}
+function answerPractice(i){let q=practiceQuestion,ok=i===q.answer;document.querySelectorAll("#practiceArea .answer").forEach((b,x)=>{if(practiceMode==="exam")b.disabled=true;if(x===q.answer&&practiceMode==="learn")b.classList.add("correct");if(x===i&&!ok)b.classList.add("wrong")});if(ok){state.stars++;state.lastActivity="Latihan "+topics[practiceType];save();$("practiceFeedback").textContent="🎉 Hebat! "+q.explanation;speak("Jawaban benar")}else{practiceWrong++;$("practiceFeedback").textContent=practiceWrong>1?"Jangan menyerah! Coba gunakan petunjuk.":"Belum tepat. Yuk, perhatikan langkahnya lagi.";speak("Belum tepat")}}
+const blueprint=["read","place","compare","compose","add","sub","mul","div","factor","add"];
+function openQuizSetup(){showScreen("quizSetup")}
+function startQuiz(mode){quizMode=mode;quizIndex=0;quizScores=[0,0];quizReview=[[],[]];let d=$("quizDifficulty").value,used=new Set();quizSets=[[],[]];for(let p=0;p<(mode==="duo"?2:1);p++)blueprint.forEach((t,index)=>{let q,attempt=0;do{q=makeQuestion(t,d);attempt++}while((used.has(q.id)||!validateQuestion(q))&&attempt<40);used.add(q.id);quizSets[p].push(q)});timeLeft=600;paused=false;if($("timerOn").value==="true"){startTimer();$("timerText").classList.remove("hidden");$("pauseBtn").classList.remove("hidden")}else{stopTimer();$("timerText").classList.add("hidden");$("pauseBtn").classList.add("hidden")}renderQuiz();showScreen("quiz")}
+function renderQuiz(){quizAnswered=[false,false];$("quizCounter").textContent=`Soal ${quizIndex+1} / 10`;if(quizMode==="solo"){$("quizContent").innerHTML='<div id="p0"></div>';renderQuizPlayer(0,"p0")}else{$("quizContent").innerHTML='<div class="duo-grid grid grid-cols-2 gap-4"><div id="p0"></div><div id="p1"></div></div>';renderQuizPlayer(0,"p0");renderQuizPlayer(1,"p1")}}
+function renderQuizPlayer(p,id){let q=quizSets[p][quizIndex];$(id).innerHTML=`<article class="card p-5"><p class="font-bold text-sky-700">Pemain ${p+1} · Skor: ${quizScores[p]}</p><h2 class="text-xl font-extrabold mt-3">${q.question}</h2><div class="grid gap-2 mt-4">${q.options.map((o,i)=>`<button class="answer" onclick="quizAnswer(${p},${i})">${String.fromCharCode(65+i)}. ${o}</button>`).join("")}</div><p id="qfeedback${p}" class="mt-3 font-bold" aria-live="polite"></p></article>`}
+function quizAnswer(p,i){if(paused||quizAnswered[p])return;quizAnswered[p]=true;let q=quizSets[p][quizIndex],ok=i===q.answer;quizReview[p].push({...q,selected:i,correct:ok});let card=$("qfeedback"+p).parentElement;card.querySelectorAll(".answer").forEach((b,x)=>{b.disabled=true;if(x===q.answer)b.classList.add("correct");if(x===i&&!ok)b.classList.add("wrong")});if(ok){quizScores[p]+=10;state.stars++;save()}$("qfeedback"+p).textContent=ok?"🎉 Tersimpan!":"Jawaban tersimpan.";if(quizMode==="solo"||quizAnswered.every(Boolean))setTimeout(()=>{quizIndex++;quizIndex>=10?finishQuiz():renderQuiz()},700)}
+function startTimer(){stopTimer();timer=setInterval(()=>{if(!paused){timeLeft--;let m=Math.floor(timeLeft/60),s=timeLeft%60;$("timerText").textContent=`⏱ ${m}:${String(s).padStart(2,"0")}`;if(timeLeft<=0){stopTimer();finishQuiz()}}},1000)}
+function stopTimer(){if(timer)clearInterval(timer);timer=null}
+function togglePause(){paused=!paused;$("pauseBtn").textContent=paused?"▶️ Lanjutkan":"⏸️ Pause";speak(paused?"Kuis dijeda":"Kuis dilanjutkan")}
+function finishQuiz(){stopTimer();let best=Math.max(...quizScores);state.lastScore=Math.max(state.lastScore,best);state.lastActivity=quizMode==="duo"?"Menyelesaikan Duo Quiz":"Menyelesaikan Kuis Solo";state.quizHistory=state.quizHistory||[];state.quizHistory.unshift({mode:quizMode,scores:[...quizScores],date:new Date().toISOString()});state.quizHistory=state.quizHistory.slice(0,20);awardBadges();save();let weak=quizReview[0].filter(x=>!x.correct).map(x=>topics[x.topic]);let remedial=weak.length?`<div class="p-4 rounded-xl bg-yellow-50 mt-4"><b>🎯 Rekomendasi:</b> Berlatih kembali pada ${[...new Set(weak)].slice(0,2).join(" dan ")}.<div class="mt-3"><button class="btn btn-primary" onclick="openPractice()">Latihan Lagi</button></div></div>`:"<p class='mt-4 font-bold text-green-700'>✅ Kamu sudah menguasai semua jenis soal dalam kuis ini!</p>";$("resultContent").innerHTML=quizMode==="solo"?`<p class="text-xl">🎉 Skor: <b>${quizScores[0]}/100</b></p><p class="mt-2">${gradeText(quizScores[0])}</p>${remedial}`:`<p class="text-xl font-bold">HASIL PERTANDINGAN</p><div class="grid grid-cols-2 gap-4 mt-4"><div class="p-4 rounded-xl bg-sky-50"><b>Player 1</b><p class="text-3xl font-extrabold">${quizScores[0]}</p></div><div class="p-4 rounded-xl bg-yellow-50"><b>Player 2</b><p class="text-3xl font-extrabold">${quizScores[1]}</p></div></div><p class="mt-5 font-bold">${quizScores[0]===quizScores[1]?"🤝 Hasilnya seri! Kalian sama-sama hebat.":"🎉 Keduanya hebat! Terus berlatih bersama."}</p>`;showScreen("quizResult");speak("Kuis selesai")}
+function reviewQuiz(){let list=quizReview[0];$("reviewContent").innerHTML=list.map((q,i)=>`<article class="card p-5"><b>${i+1}. ${q.question}</b><p class="mt-2">${q.correct?"✅ Benar":"🔄 Jawabanmu: "+q.options[q.selected]}</p><p>Jawaban benar: <b>${q.options[q.answer]}</b></p><p class="text-slate-600 mt-2">${q.explanation}</p></article>`).join("");showScreen("review")}
+function openCertificate(){renderCertificate();showScreen("certificate")}
+function renderCertificate(){let score=state.lastScore||0;$("certName").textContent=state.name||"Sahabat Matematika";$("certClass").textContent=state.kelas||"Kelas IV";$("certSchool").textContent=state.school||"Sekolahku";$("certScore").textContent=score+"/100";$("certGrade").textContent=gradeText(score);$("certDate").textContent=new Date().toLocaleDateString("id-ID",{day:"numeric",month:"long",year:"numeric"});$("certNo").textContent="MPI4-"+new Date().getFullYear()+"-"+String((Date.now()%1000000)).padStart(6,"0")}
+function gradeText(s){return s>=90?"Sangat Baik":s>=80?"Baik":s>=70?"Cukup Baik":"Perlu Latihan — Terus berlatih, kamu pasti berkembang!"}
+function openProgress(){let p=Math.round(state.done.length/modules.length*100),unfinished=modules.filter((_,i)=>!state.done.includes(i)).map(m=>m.title).slice(0,3).join(", ")||"Semua misi sudah selesai!";$("progressDetails").innerHTML=`<div class="grid md:grid-cols-4 gap-4"><div class="p-4 rounded-2xl bg-sky-50"><b>Materi selesai</b><p class="text-3xl font-extrabold">${state.done.length}/${modules.length}</p></div><div class="p-4 rounded-2xl bg-yellow-50"><b>Bintang</b><p class="text-3xl font-extrabold">⭐ ${state.stars}</p></div><div class="p-4 rounded-2xl bg-green-50"><b>Skor terbaik</b><p class="text-3xl font-extrabold">${state.lastScore}</p></div><div class="p-4 rounded-2xl bg-orange-50"><b>Streak</b><p class="text-3xl font-extrabold">🔥 ${state.streak}</p></div></div><div class="mt-6"><b>Progress belajar ${p}%</b><div class="progress-track mt-2"><div class="progress-fill" style="width:${p}%"></div></div><p class="mt-4"><b>Belum selesai:</b> ${unfinished}</p><p class="mt-3"><b>Badge:</b> ${state.badges.length?state.badges.join(" · "):"Belum ada badge. Terus belajar!"}</p></div>`;let records=state.quizHistory||[];$("quizHistoryList").innerHTML=records.length?records.map(r=>`<div class="card p-3 flex justify-between gap-3"><span>${r.mode==="duo"?"Duo Quiz":"Kuis Solo"} · ${new Date(r.date).toLocaleDateString("id-ID")}</span><strong>${r.scores.join(" – ")}${r.mode==="solo"?"/100":" poin"}</strong></div>`).join(""):"<p class=\"text-slate-600\">Belum ada hasil kuis. Ayo coba kuis!</p>";showScreen("progress")}
+function openHelp(){showScreen("help")}
+function openTeacher(){$("teacherStats").innerHTML=`<div class="p-4 rounded-xl bg-sky-50"><b>Materi</b><p class="text-2xl font-extrabold">${state.done.length}/9</p></div><div class="p-4 rounded-xl bg-yellow-50"><b>Bintang</b><p class="text-2xl font-extrabold">${state.stars}</p></div><div class="p-4 rounded-xl bg-green-50"><b>Skor terbaik</b><p class="text-2xl font-extrabold">${state.lastScore}</p></div><div class="p-4 rounded-xl bg-orange-50"><b>Permainan</b><p class="text-2xl font-extrabold">${state.games}</p></div>`;showScreen("teacher")}
+function setClassroomMode(){document.documentElement.requestFullscreen?.();showScreen("materials");speak("Mode kelas aktif")}
+function toggleFullscreen(){if(document.fullscreenElement)document.exitFullscreen?.();else document.documentElement.requestFullscreen?.()}
+function showResetConfirm(){$("resetConfirm").classList.remove("hidden")}function hideResetConfirm(){$("resetConfirm").classList.add("hidden")}
+function resetProgress(){state={...defaultState,name:state.name,kelas:state.kelas,school:state.school};save();hideResetConfirm();renderHome();showScreen("home")}
+function awardBadges(){let b=[];if(state.done.length>=1)b.push("🏅 Penjelajah Bilangan");if(state.done.includes(1))b.push("🏅 Jago Nilai Tempat");if(state.done.includes(4))b.push("🏅 Raja Penjumlahan");if(state.done.includes(5))b.push("🏅 Master Pengurangan");if(state.done.includes(6))b.push("🏅 Jago Perkalian");if(state.done.includes(7))b.push("🏅 Ahli Pembagian");if(state.done.includes(8))b.push("🏅 Penakluk Faktor");if(state.lastScore>=90)b.push("🏆 Math Champion");state.badges=[...new Set(b)]}
+function rand(a,b){return Math.floor(Math.random()*(b-a+1))+a}function shuffle(a){return [...a].sort(()=>Math.random()-.5)}
+function choices(correct, distractors=[]){let pool=[...new Set(distractors.map(String).filter(x=>x!==String(correct)))];while(pool.length<3){let delta=rand(1,Math.max(4,Math.min(20,Math.abs(Number(correct)||10))));let candidate=String(Math.max(0,Number(correct)+(Math.random()<.5?-delta:delta)));if(candidate!==String(correct)&&!pool.includes(candidate))pool.push(candidate)}let options=shuffle([String(correct),...pool.slice(0,3)]);return {options,answer:options.indexOf(String(correct))}}
+function numWords(n){const a=["nol","satu","dua","tiga","empat","lima","enam","tujuh","delapan","sembilan","sepuluh","sebelas"];function f(x){if(x<12)return a[x];if(x<20)return f(x-10)+" belas";if(x<100)return f(Math.floor(x/10))+" puluh"+(x%10?" "+f(x%10):"");if(x<200)return"seratus"+(x%100?" "+f(x%100):"");if(x<1000)return f(Math.floor(x/100))+" ratus"+(x%100?" "+f(x%100):"");if(x<2000)return"seribu"+(x%1000?" "+f(x%1000):"");return f(Math.floor(x/1000))+" ribu"+(x%1000?" "+f(x%1000):"")}return f(n).replace(/\b\w/g,x=>x.toUpperCase())}
+function makeQuestion(topic,difficulty){let a,b,ans,c,text,explain;let d=difficulty==="easy"?1:difficulty==="medium"?2:3;
+ if(topic==="read"){a=rand(1000,9999);ans=numWords(a);let s=String(a),near=[Number(s)+10,Math.max(1000,a-10),Number(s[0]+s[2]+s[1]+s[3])].filter(n=>n>=1000&&n<=9999&&n!==a);let o=shuffle([ans,...near.map(numWords)]);while(o.length<4){let candidate=numWords(rand(1000,9999));if(!o.includes(candidate))o.push(candidate)}return q("READ-"+a,topic,difficulty,`Bilangan ${fmt(a)} dibaca ...`,o,o.indexOf(ans),"Baca nilai tempat dari ribuan ke satuan. Nol tidak perlu disebutkan.")}
+ if(topic==="place"){a=rand(1000,9999);let pos=rand(0,3),dig=String(a)[pos],val=Number(dig)*[1000,100,10,1][pos];c=choices(val);return q("PLC-"+a+"-"+pos,topic,difficulty,`Nilai angka ${dig} pada bilangan ${fmt(a)} adalah ...`,c.options,c.answer,`Angka ${dig} berada pada tempat ${["ribuan","ratusan","puluhan","satuan"][pos]}.`)}
+ if(topic==="compare"){a=rand(1000,9999);b=rand(1000,9999);ans=a>b?">":"<";let o=shuffle([">","<","=","tidak dapat dibandingkan"]);return q("CMP-"+a+"-"+b,topic,difficulty,`${fmt(a)} ... ${fmt(b)}`,o,o.indexOf(ans),"Bandingkan dari angka ribuan, lalu ratusan, puluhan, dan satuan.")}
+ if(topic==="compose"){a=rand(1000,9999);let s=String(a),right=`${s[0]}.000 + ${Number(s[1])*100} + ${Number(s[2])*10} + ${s[3]}`,wrong1=`${Number(s[0])*1000} + ${Number(s[1])*10} + ${Number(s[2])*100} + ${s[3]}`,wrong2=`${Number(s[0])*1000} + ${Number(s[1])*100} + ${Number(s[2])} + ${Number(s[3])*10}`,wrong3=`${Number(s[0])*1000} + ${Number(s[1])*100} + ${Number(s[2])*10} + ${Number(s[3])+1}`;let o=shuffle([right,wrong1,wrong2,wrong3]);return q("COM-"+a,topic,difficulty,`Uraikan ${fmt(a)} menurut nilai tempatnya. Pilih dekomposisi yang benar.`,o,o.indexOf(right),"Ribuan bernilai ribuan, ratusan bernilai ratusan, dan seterusnya. Jumlahkan kembali untuk memeriksa.")}
+ if(topic==="add"){a=rand(20*d,300+d*100);b=rand(10,Math.max(20,999-a));ans=a+b;let story=difficulty==="easy"?`${a} apel ada di keranjang. Ibu menambah ${b} apel. Berapa apel sekarang?`:difficulty==="hard"?`Perpustakaan punya ${a} buku cerita dan menerima ${b} buku lagi. Berapa jumlah buku cerita sekarang?`:`Helen mengumpulkan ${a} stiker, lalu mendapat ${b} stiker lagi. Berapa stikernya?`;c=choices(ans,[ans+10,Math.max(0,ans-10),a+b+1]);return q("ADD-"+a+"-"+b,topic,difficulty,`${story} (${a} + ${b} = ...)`,c.options,c.answer,"Gabungkan kedua jumlah: jumlahkan satuan, lalu puluhan dan ratusan.")}
+ if(topic==="sub"){a=rand(100,999);b=rand(10,a);ans=a-b;c=choices(ans);return q("SUB-"+a+"-"+b,topic,difficulty,`${a} − ${b} = ...`,c.options,c.answer,"Kurangkan dari satuan. Jika perlu, pinjam dari nilai tempat di sebelahnya.")}
+ if(topic==="mul"){a=rand(2,Math.min(10,4+d*2));b=rand(2,Math.floor(100/a));ans=a*b;c=choices(ans);return q("MUL-"+a+"-"+b,topic,difficulty,`${a} × ${b} = ...`,c.options,c.answer,`${a} kelompok berisi ${b} menghasilkan ${ans}.`)}
+ if(topic==="div"){b=rand(2,10);ans=rand(2,Math.floor(100/b));a=b*ans;c=choices(ans);return q("DIV-"+a+"-"+b,topic,difficulty,`${a} ÷ ${b} = ...`,c.options,c.answer,`Karena ${b} × ${ans} = ${a}, maka hasil baginya ${ans}.`)}
+ a=[12,16,18,20,24,30,36][rand(0,6)];let factors=[];for(let i=1;i<=a;i++)if(a%i===0)factors.push(i);ans=factors.join(", ");let distractors=[];for(let attempt=0;attempt<30&&distractors.length<3;attempt++){let n=rand(2,a-1),subset=factors.filter(x=>x!==n&&Math.random()<.72);if(!subset.length)subset=[1];let choice=subset.join(", ");if(choice!==ans&&!distractors.includes(choice))distractors.push(choice)}let o=shuffle([ans,...distractors]);return q("FAC-"+a,topic,difficulty,`Faktor dari ${a} adalah ...`,o,o.indexOf(ans),"Faktor membagi bilangan sampai habis tanpa sisa.")}
+function q(id,topic,difficulty,question,options,answer,explanation){return{id,topic,difficulty,type:"multiple-choice",question,options,answer,explanation,hints:["Perhatikan konsep utama pada soal.","Coba kerjakan perlahan dari langkah pertama.","Gunakan pembahasan: "+explanation]}}
+function validateQuestion(x){return !!(x&&x.id&&topics[x.topic]&&["easy","medium","hard"].includes(x.difficulty)&&Array.isArray(x.options)&&x.options.length===4&&x.answer>=0&&x.answer<x.options.length&&x.options.filter(v=>v===x.options[x.answer]).length===1)}
+function runSelfTest(){return{questions:blueprint.every(t=>validateQuestion(makeQuestion(t,"medium"))),randomization:new Set(Array.from({length:10},()=>makeQuestion("add","easy").id)).size>1,scoring:10*10===100,duo:quizSets.length>=0,storage:!!localStorage,navigation:!!$("home")}}
+if(state.darkMode)document.body.classList.add("dark-mode");renderHome();updateHeader();if(window.lucide)lucide.createIcons();
+</script>
+ </body>
+</html>
